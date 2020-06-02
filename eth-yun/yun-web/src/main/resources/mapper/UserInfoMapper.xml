@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yunliantao.qkl.mapper.UserinfoDao">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yunliantao.qkl.domain.entity.UserinfoDo">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="global" property="global"/>
+        <result column="phone" property="phone"/>
+        <result column="password" property="password"/>
+        <result column="state" property="state"/>
+
+        <result column="jy_usdt" property="jyUsdt"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        `id`,`username`,`global`,`phone`,`password`,`state`,`referee_id`,
+        `referee`,`path`,`secon_pass`,`salt`,`user_level`,`activity_level`,`usdt_address`,`contribution_level`,`adminset`,`real_name`,
+        `last_login_time`,`update_time`,`create_time`,`isowner`,`jy_usdt`
+    </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+spring:
+
+
+  main.allow-bean-definition-overriding: true
+  cloud.compatibility-verifier.enabled: false
+  # redis 相关
+  redis:
+    password:
+    host: 47.244.215.73
+  # 数据源
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: yunliantao123
+    url: jdbc:mysql://120.55.101.228:3306/eth-yun?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+  cloud:
+    nacos:
+      discovery:
+        register-enabled: true
+        server-addr: 47.244.162.61:8848
+#        port: 8081
+#        ip: 127.0.0.1
+

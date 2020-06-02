@@ -1,0 +1,13 @@
+server:
+  port: 8060
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: service-web
+  servlet:
+    multipart:
+      max-file-size:  102400KB
+      max-request-size: 102400KB

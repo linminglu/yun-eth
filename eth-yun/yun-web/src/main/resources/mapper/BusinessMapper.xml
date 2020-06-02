@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yunliantao.qkl.mapper.BusinessDao">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yunliantao.qkl.domain.entity.BusinessDo">
+        <id column="fi_id" property="fiId"/>
+        <result column="fs_config" property="fsConfig"/>
+        <result column="fs_value" property="fsValue"/>
+        <result column="fs_unit" property="fsUnit"/>
+        <result column="fs_descr" property="fsDescr"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+
+</mapper>

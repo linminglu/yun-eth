@@ -1,0 +1,13 @@
+server:
+  port: 8059
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: service-job
+  servlet:
+    multipart:
+      max-file-size:  102400KB
+      max-request-size: 102400KB
